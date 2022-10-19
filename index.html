@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="education, sport, Egypt, university, hobbies, movies">
+    <meta name="description" content="Лабораторна робота №2 із предмету основи Web - технологій, на тему: Мова гіпертекстової розмітки сайту HTML-5.">
+    <title>Мусійчук Я. С. ІВ-91 ЛР4 Варіант 19</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h2>Мусійчук Ярослав Сергійович</h2>
+    <p>Місце народження: м. Буча, 9 травня 2002 року</p>
+    <p>Освіта: НТУУ "КПІ", м Київ</p>
+    <p>Хоббі:</p>
+    <ul>
+        <li>Атлетика</li>
+        <li>Велоспорт</li>
+        <li>Гімнастика</li>
+        <li>Комп'ютерні ігри</li>
+    </ul>
+    <p>Улюблені фільми:</p>
+    <ol>
+        <li id="first_el" onclick="changeFirst()" >"Втеча із Шоушенка", 1994</li>
+        <li id="second_el" onclick="changeSecond()">"Великий куш", 2000</li>
+        <li>"Шерлок Холмс", 2009</li>
+        <li>"Пірати Карибського моря", 2003</li>
+    </ol>
+    <p>Шарм-еш-Шейх — місто в Єгипті і туристичний центр на Червоному морі. Розташоване на півдні Синайського півострова, на північному узбережжі Червоного моря, при гирлі Акабської і Суецької заток. Населення міста з передмістями — 55095 осіб (2015 р.).</p>
+    <p>До 1967 року тут існувало маленьке поселення. З приєднанням Синаю до Ізраїлю 1967 р. ізраїльтяни побудували місто Офіра з першими туристичним готелем. 1982 року Синай перейшов назад до Єгипту, уряд якого продовжив зусилля по розвитку курорту. 1999 і 2000 року тут відбулися міжнародні близькосхідні мирні перемовини. У липні 2005 року тут стався терористичний акт.</p>
+    <div>
+        <button type="button" onclick="addImg()" id="add" >Додати</button>
+        <button type="button" onclick="zoomIn()" id="zoom-in">Збільшити</button>
+        <button type="button" onclick="zoomOut()" id="zoom-out">Зменшити</button>
+        <button type="button" onclick="removeElement()" id="delete">Видалити</button>
+    </div>
+    <a href="http://sharm-el-sheikh.com/">
+     <div id="img_container">
+         <img  id="img" src="SharmView.jpg">
+     </div>
+
+    </a>
+
+
+</body>
+<script src="script.js"></script>
+</html>
